@@ -1,12 +1,10 @@
 
 import { createRoot } from "react-dom/client"
-import Header from "./components/Header"
-import ReactFacts from "./components/ReactFacts"
+import App from "./App"
 import "./main.css"
 const root = createRoot(document.querySelector('#app'))
 
 root.render(<>
-    <Header />
-    <ReactFacts />
+    <App />
 </>
 )
