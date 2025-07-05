@@ -1,0 +1,20 @@
+:root {
+    color-scheme: dark light;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 10vw;
+    border-bottom: white solid 1px;
+
+}
+
+.header-nav-items {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+
+}

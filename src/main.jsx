@@ -1,12 +1,23 @@
 
 import { createRoot } from "react-dom/client"
-
+import "./main.css"
 const root = createRoot(document.querySelector('#app'))
 
 
 
-function Logo() {
-    return <img src="vite.svg" alt="Vite logo" width="40px" />
+function Header() {
+    return (
+        <header className="header">
+            <img src="vite.svg" alt="Vite logo" width="40px" />
+            <nav className="header-nav">
+                <ul className="header-nav-items">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+    )
 }
 
 function ReactFacts() {
@@ -28,7 +39,7 @@ console.log("<h1>Fun facts about React</h1>")
 
 
 root.render(<>
-    <Logo />
+    <Header />
     <ReactFacts />
 </>
 )
